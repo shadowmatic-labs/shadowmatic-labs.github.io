@@ -17,6 +17,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/mystyles.css" rel="stylesheet" />
 
+        <script src="js/scripts.js"></script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -57,7 +59,7 @@
                 </div>
                 <div class="row">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-8 col-lg-8 mx-auto">
+                    <div class="col-md-12 col-lg-12 mx-auto">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/GGjy65UNWwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -65,13 +67,43 @@
                         <div class="row col-8 mx-auto">
                             <div class="col-md-6 col-lg-6 text-center">
                                 <div class="text-center mt-4">
-                                    <a class="btn btn-xl btn-outline-dark" href="presskit/sheet.php?p=sbx_5k"><i class="fas fa-file-alt mr-2"></i>Press</a>
+                                    <a class="btn btn-xl btn-outline-dark" onclick="ChangeShowState('SBXDiv')"><i class="fas fa-file-alt mr-2"></i>More</a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 text-center">
                                 <div class="text-center mt-4">
-                                    <a class="btn btn-xl btn-outline-dark" href="https://store.steampowered.com/app/1273720/SBX_5K"><i class="fab fa-steam mr-2"></i>Steam</a>
+                                    <a class="btn btn-xl btn-outline-dark" href="https://store.steampowered.com/app/1273720/SBX_5K" target="_blank"><i class="fab fa-steam mr-2"></i>Steam</a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row col-12 mx-auto" id="SBXDiv" style="display: none;">
+                            <div class="row my-5">
+                                <div class="col-md-6">
+                                    <img src="./images/friends.gif" class="img-fluid rounded float-left"alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="./images/obliterate.gif" class="img-fluid rounded float-right"alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="./images/plan.gif" class="img-fluid rounded float-left"alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="./images/play.gif" class="img-fluid rounded float-right"alt="">
+                                </div>
+                            </div>
+
+                            <div class="row my-5">
+                                <div class="col-md-12">
+                                    <h1 class="text-center">Price: Free!</h1>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-md-12">
+                                    <h1 class="text-center">Released in: 20 April, 2020</h1>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -91,12 +123,12 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Shadowmatic Labs® is a die-hard gamedev studio out to conquer the 🌎</br> Click the 'Press' button bellow for press-facing information about us.</p></div>
-                    <!-- <div class="col-lg-4 ml-auto"><p class="lead">Boas! Somos um estúdio de jogos sediado em Viana do Castelo, a nossa missão é desenvolver produtos com excelência técnica. O botão de 'Press' tem alguns dados tecnicos.</p></div> -->
-                    <!-- <div class="col-lg-8 mr-auto"><p class="lead">Shadowmatic Labs® is a die-hard gamedev cooperative out to conquer the world. Click the 'Press' bellow for our press-facing information about us. And scroll down to follow us on social media!</p></div> -->
+                    <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Shadowmatic Labs® is a die-hard gamedev studio out to conquer the 🌎</br> Founded at 8 of August 2018 in Viana do Castelo, a city in the north of Portugal.</p></div>
                 </div>
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="presskit"><i class="fas fa-file-alt mr-2"></i>Press</a>
+                <div class="row my-5">
+                    <div id = "map" class="img-fluid">
+
+                    </div>
                 </div>
                 <!-- About Section Button-->
             </div>
@@ -109,7 +141,7 @@
                     <div class="divider-custom-icon"><i class="fas fa-plus-circle "></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Join us on discord for rewards and giveaways.</p></div>
+                <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Join us on discord!</p></div>
                     <div class="text-center mt-4">
                         <a class="btn btn-xl btn-outline-dark" href="https://discord.gg/k8EHA3R"><i class="fab fa-discord mr-2"></i>Discord</a>
                     </div>
@@ -146,6 +178,12 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="https://store.steampowered.com/search/?developer=Shadowmatic%20Labs"><i class="fab fa-steam fa-2x"></i></a><p class="lead mb-0"></p>
                     </div>
                 </div>
+                <div class="row my-4">
+                    <div class="col-md-12">
+                        <h5 class="text-center">Email: info@shadowmatic.pt</h5>
+                        <h5 class="text-center">Phone: +351 258 095 996 </h5>
+                    </div>
+                </div>
             </div>
         </footer>
         <!-- Copyright Section-->
@@ -165,6 +203,8 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoktDgOBi4zFl9YL3WAyV7LQThTzPaDIs&callback=initMap&libraries=&v=weekly&channel=2"async></script>
     </body>
 </html>
