@@ -17,6 +17,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/mystyles.css" rel="stylesheet" />
 
+        <script src="js/scripts.js"></script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,15 +38,14 @@
         <header class="masthead bg-primary text-white-border text-white text-center" >
             <div class="container d-flex align-items-center flex-column" style="height:28em">
                 <img class="col-sm-6" src="assets/img/shadowmatic_logo_wide_soft.png" alt="" style="padding-bottom:6rem; padding-top:2rem;" />
-                <h4 style="font-family: Lato; background: rgba(0,0,0, 0.5); padding: 10px;">Raycast first, ask questions later</h4>
-               
+                <h1 style="font-family: Lato; background: rgba(0,0,0, 0.5); padding: 10px;">Raycast first, ask questions later</h1>
                 <span>
             </br>
 
                     <a href="https://twitter.com/intent/tweet?screen_name=shadowmaticlabs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @shadowmaticlabs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
             </div>
         </header>
-        <!-- Portfolio Section-->
+        <!-- SBX Section-->
         <section class="page-section bg-primary portfolio text-secondary" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
@@ -57,7 +58,7 @@
                 </div>
                 <div class="row">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-8 col-lg-8 mx-auto">
+                    <div class="col-md-12 col-lg-12 mx-auto">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/GGjy65UNWwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -65,14 +66,16 @@
                         <div class="row col-8 mx-auto">
                             <div class="col-md-6 col-lg-6 text-center">
                                 <div class="text-center mt-4">
-                                    <a class="btn btn-xl btn-outline-dark" href="presskit/sheet.php?p=sbx_5k"><i class="fas fa-file-alt mr-2"></i>Press</a>
+                                    <!--onclick="ChangeShowState('SBXDiv')"-->
+                                    <a class="btn btn-xl btn-outline-dark"  href="/sbx.html"><i class="fas fa-file-alt mr-2"></i>More</a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 text-center">
                                 <div class="text-center mt-4">
-                                    <a class="btn btn-xl btn-outline-dark" href="https://store.steampowered.com/app/1273720/SBX_5K"><i class="fab fa-steam mr-2"></i>Steam</a>
+                                    <a class="btn btn-xl btn-outline-dark" href="https://store.steampowered.com/app/1273720/SBX_5K" target="_blank"><i class="fab fa-steam mr-2"></i>Steam</a>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -91,12 +94,22 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Shadowmatic Labs® is a die-hard gamedev studio out to conquer the 🌎</br> Click the 'Press' button bellow for press-facing information about us.</p></div>
-                    <!-- <div class="col-lg-4 ml-auto"><p class="lead">Boas! Somos um estúdio de jogos sediado em Viana do Castelo, a nossa missão é desenvolver produtos com excelência técnica. O botão de 'Press' tem alguns dados tecnicos.</p></div> -->
-                    <!-- <div class="col-lg-8 mr-auto"><p class="lead">Shadowmatic Labs® is a die-hard gamedev cooperative out to conquer the world. Click the 'Press' bellow for our press-facing information about us. And scroll down to follow us on social media!</p></div> -->
+                    <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Shadowmatic Labs® is a die-hard gamedev studio out to conquer the 🌎</br> Founded at 8 of August 2018 in Viana do Castelo, a city in the north of Portugal.</p></div>
                 </div>
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="presskit"><i class="fas fa-file-alt mr-2"></i>Press</a>
+                <div class="row my-5">
+                    <div class="col-md-12">
+                        <iframe
+                        class="rounded"
+                        width="100%"
+                        height="450"
+                        style="border:0"
+                        loading="lazy"
+                        allowfullscreen
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoktDgOBi4zFl9YL3WAyV7LQThTzPaDIs
+                            &q=R. de Santa Cristina 130, 4900-810 Viana do Castelo&center=41.707015,-8.808559 &zoom=15 &maptype=satellite">
+                        </iframe>
+                    </div>
+                    
                 </div>
                 <!-- About Section Button-->
             </div>
@@ -109,7 +122,7 @@
                     <div class="divider-custom-icon"><i class="fas fa-plus-circle "></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Join us on discord for rewards and giveaways.</p></div>
+                <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Join us on discord!</p></div>
                     <div class="text-center mt-4">
                         <a class="btn btn-xl btn-outline-dark" href="https://discord.gg/k8EHA3R"><i class="fab fa-discord mr-2"></i>Discord</a>
                     </div>
@@ -130,7 +143,12 @@
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">Viana do Castelo<br />Portugal</p>
+
+                        <h5 class="text-center"> Rua de Santa Cristina, 160, Bloco 4, 1 Direito </br>
+                            Meadela, Viana do Castelo </br>
+                            4900-810 Viana do Castelo </br>
+                            Portugal</h5>
+                        <!--<p class="lead mb-0">Viana do Castelo<br />Portugal</p> -->
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
@@ -144,6 +162,24 @@
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">Steam</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://store.steampowered.com/search/?developer=Shadowmatic%20Labs"><i class="fab fa-steam fa-2x"></i></a><p class="lead mb-0"></p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="text-center">Email: info@shadowmatic.pt</h5>
+                                <h5 class="text-center">Phone: +351 258 095 996 </h5>
+                            </div>
+                           
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-12">
+                                <a class="btn btn-xl btn-outline-primary"href="/assets/img/shadowmatic_logo.png" download="/assets/img/shadowmatic_logo.png"><i class="fas fa-file-alt mr-2"></i>Download Logo</a>
+                            </div>
+                           
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -165,6 +201,5 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
