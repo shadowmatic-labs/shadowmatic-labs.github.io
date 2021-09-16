@@ -82,4 +82,10 @@
   /* The height is 400 pixels */
   width: 100%;
 }
+
+.text-description{
+  font-size: 1.25rem;
+  font-weight: 300;
+
+}
   
