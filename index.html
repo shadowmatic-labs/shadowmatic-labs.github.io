@@ -38,15 +38,14 @@
         <header class="masthead bg-primary text-white-border text-white text-center" >
             <div class="container d-flex align-items-center flex-column" style="height:28em">
                 <img class="col-sm-6" src="assets/img/shadowmatic_logo_wide_soft.png" alt="" style="padding-bottom:6rem; padding-top:2rem;" />
-                <h4 style="font-family: Lato; background: rgba(0,0,0, 0.5); padding: 10px;">Raycast first, ask questions later</h4>
-               
+                <h1 style="font-family: Lato; background: rgba(0,0,0, 0.5); padding: 10px;">Raycast first, ask questions later</h1>
                 <span>
             </br>
 
                     <a href="https://twitter.com/intent/tweet?screen_name=shadowmaticlabs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @shadowmaticlabs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
             </div>
         </header>
-        <!-- Portfolio Section-->
+        <!-- SBX Section-->
         <section class="page-section bg-primary portfolio text-secondary" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
@@ -67,7 +66,8 @@
                         <div class="row col-8 mx-auto">
                             <div class="col-md-6 col-lg-6 text-center">
                                 <div class="text-center mt-4">
-                                    <a class="btn btn-xl btn-outline-dark" onclick="ChangeShowState('SBXDiv')"><i class="fas fa-file-alt mr-2"></i>More</a>
+                                    <!--onclick="ChangeShowState('SBXDiv')"-->
+                                    <a class="btn btn-xl btn-outline-dark"  href="/sbx.html"><i class="fas fa-file-alt mr-2"></i>More</a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 text-center">
@@ -76,35 +76,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row col-12 mx-auto" id="SBXDiv" style="display: none;">
-                            <div class="row my-5">
-                                <div class="col-md-6">
-                                    <img src="./images/friends.gif" class="img-fluid rounded float-left"alt="">
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="./images/obliterate.gif" class="img-fluid rounded float-right"alt="">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <img src="./images/plan.gif" class="img-fluid rounded float-left"alt="">
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="./images/play.gif" class="img-fluid rounded float-right"alt="">
-                                </div>
-                            </div>
-
-                            <div class="row my-5">
-                                <div class="col-md-12">
-                                    <h1 class="text-center">Price: Free!</h1>
-                                </div>
-                            </div>
-                            <div class="row my-5">
-                                <div class="col-md-12">
-                                    <h1 class="text-center">Released in: 20 April, 2020</h1>
-                                </div>
-                            </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,9 +97,19 @@
                     <div class="col-lg-8 ml-auto mx-auto text-center"><p class="lead">Shadowmatic Labs® is a die-hard gamedev studio out to conquer the 🌎</br> Founded at 8 of August 2018 in Viana do Castelo, a city in the north of Portugal.</p></div>
                 </div>
                 <div class="row my-5">
-                    <div id = "map" class="img-fluid">
-
+                    <div class="col-md-12">
+                        <iframe
+                        class="rounded"
+                        width="100%"
+                        height="450"
+                        style="border:0"
+                        loading="lazy"
+                        allowfullscreen
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoktDgOBi4zFl9YL3WAyV7LQThTzPaDIs
+                            &q=R. de Santa Cristina 130, 4900-810 Viana do Castelo&center=41.707015,-8.808559 &zoom=15 &maptype=satellite">
+                        </iframe>
                     </div>
+                    
                 </div>
                 <!-- About Section Button-->
             </div>
@@ -162,7 +143,12 @@
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">Viana do Castelo<br />Portugal</p>
+
+                        <h5 class="text-center"> Rua de Santa Cristina, 160, Bloco 4, 1 Direito </br>
+                            Meadela, Viana do Castelo </br>
+                            4900-810 Viana do Castelo </br>
+                            Portugal</h5>
+                        <!--<p class="lead mb-0">Viana do Castelo<br />Portugal</p> -->
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
@@ -180,8 +166,20 @@
                 </div>
                 <div class="row my-4">
                     <div class="col-md-12">
-                        <h5 class="text-center">Email: info@shadowmatic.pt</h5>
-                        <h5 class="text-center">Phone: +351 258 095 996 </h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="text-center">Email: info@shadowmatic.pt</h5>
+                                <h5 class="text-center">Phone: +351 258 095 996 </h5>
+                            </div>
+                           
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-12">
+                                <a class="btn btn-xl btn-outline-primary"href="/assets/img/shadowmatic_logo.png" download="/assets/img/shadowmatic_logo.png"><i class="fas fa-file-alt mr-2"></i>Download Logo</a>
+                            </div>
+                           
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -203,8 +201,5 @@
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
-        
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoktDgOBi4zFl9YL3WAyV7LQThTzPaDIs&callback=initMap&libraries=&v=weekly&channel=2"async></script>
     </body>
 </html>

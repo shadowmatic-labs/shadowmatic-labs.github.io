@@ -67,27 +67,4 @@
   
   })(jQuery); 
   // End of use strict
-
-  function ChangeShowState(div) {
-    const divToChange = document.getElementById(div);
-    if(divToChange.style.display === "none"){
-      divToChange.style.display = "block";
-    }else{
-      divToChange.style.display = "none";
-    }
-    
-  }
-
-  function initMap() {
-    const uluru = { lat: 41.707015, lng: -8.808559 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 10,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
   
