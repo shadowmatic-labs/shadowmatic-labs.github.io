@@ -207,7 +207,7 @@ button { font: inherit; cursor: pointer; }
   display: block;
   width: min(880px, 80vw);
   height: auto;
-  margin: 0 0 clamp(44px, 6vw, 80px);
+  margin: 0 0 clamp(72px, 10vw, 140px);
   opacity: 0.98;
   filter: drop-shadow(0 8px 40px rgba(0,0,0,0.55));
 }
